@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>找餐廳</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <nav class="navbar logo">
+    <div class="container">
+      <a class="navbar-brand">
+        <img src="/pictures/logo.png" alt="" width="80" height="80">
+      </a>
+
+      <form class="d-flex" action="/search">
+        <input class="form-control me-2" type="search" placeholder="搜尋" aria-label="Search" name="keyword"
+          value="{{keyword}}">
+        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
+  <!-- partial templates will replace the part of "body" here -->
+  {{{ body }}}
+  <script src="https://kit.fontawesome.com/574e533d95.js" crossorigin="anonymous"></script>
+  <script src="/javascripts/jquery-3.5.1.js"></script>
+  <script src="/javascripts/popper.min.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+</body>
+
+</html>

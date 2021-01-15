@@ -1,0 +1,47 @@
+a {
+  color: #000;
+  text-decoration: none;
+}
+.card:hover {
+  color: #000;
+  background-color: #f7f8f9;
+  border: none;
+}
+body {
+  background-color: #f7f8f9;
+}
+.logo {
+  background-color: #f7f8f9;
+  background: url("/pictures/restaurant.jpg");
+  background-size: cover;
+}
+.card {
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.card-title {
+  font-weight: bold;
+}
+.card img {
+  width: 30%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+@media only screen and (max-width: 768px) {
+  .card-body {
+    padding: 0.5em 1.2em;
+  }
+  .card-body .card-text {
+    margin: 0;
+  }
+  .card img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card img {
+    width: 40%;
+  }
+}

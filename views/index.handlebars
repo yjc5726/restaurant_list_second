@@ -1,0 +1,36 @@
+<nav class="navbar navbar-white bg-white">
+  <div class="container">
+    <a href="/" style="color:#ff6e06;">
+      <i class="fas fa-chevron-left" style="margin-right: 10px;"></i><span>首頁</span>
+    </a>
+    <div style="font-size: 17px; margin: auto auto;">餐廳列表</div>
+  </div>
+</nav>
+
+
+
+<div class="content">
+
+
+  <div class="list">
+    {{#each restaurants}}
+
+
+    <a href="/restaurants/{{this.id}}">
+      <div class="card">
+        <img src="{{this.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span style="float: right;"><i class="fas fa-star" style="color: #E78200;"></i>{{this.rating}}</span>
+
+          <h5 class="card-title">{{this.name}}</h5>
+
+          <p class="card-text" style="color: #718CBB;">{{this.category}}</p>
+
+
+        </div>
+      </div>
+    </a>
+
+    {{/each}}
+  </div>
+</div>
